@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Note Application</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Note creator web Application">
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="author" content="Jarvis Jardin">
+		
+		<!-- 	CSS  -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- 	JS	 -->
+		<script type="text/javascript" src="js/script.js"></script>
+		
+	</head>
+	
+	<header>
+		<div>
+			<h1>Note Application</h1>
+			<p>Spicy jalapeno bacon ipsum dolor amet pork tail biltong beef ribs shank boudin, pig cupim sirloin. Shankle turducken kevin pork loin pork chop strip steak. Ball tip pork chop filet mignon, kevin burgdoggen tri-tip turducken meatloaf beef tongue frankfurter venison. Picanha ball tip pancetta pork chop beef ribs</p>
+		</div>
+	</header>	
+		
+	<body>
+		<div id="forms">
+			<div>
+				<form method="POST" onsubmit="addNote()">
+					<input id="addNoteInput" type="textarea" name="addNoteInput" required="required"/>
+					<button type="submit" value="submit">Add Note</button>
+				</form>
+			</div>
+			
+			<div>
+				<form method="POST" onsubmit="changeNotesColor()">
+					<input id="changeNotesColorInput" type="color" name="changeNotesColorInput"/>
+					<button type="submit" value="submit">Change Color</button>
+				<form>
+			</div>
+		</div>
+		
+		<div id="Notes">
+		</div>
+	
+	</body>
+</html>
